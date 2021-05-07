@@ -6,4 +6,4 @@
 <p> Also, it is worth noting that the website isn't mobile or responsive as I am too lazy to code it :') </p>
 <p> Anyways, enjoy the website and happy coding everyone! </p>
 
-<h3>- Sia-WRWD</h3>
+<h3>- Sia-WRWD, 07/05/2021</h3>
