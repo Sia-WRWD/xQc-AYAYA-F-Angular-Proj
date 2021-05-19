@@ -1,0 +1,377 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+}
+html {
+    position: relative;
+    min-height: 190%;
+}
+body {
+    background-image: url('background.png');
+
+}
+app-root {
+    margin-bottom: 100px;
+}
+/*Header*/
+.header-container .logo-container {
+    width: 100%;
+    background: black;
+    color: yellow;
+}
+.header-container .logo-container a {
+    display: inline-flex;
+}
+.header-container .logo-container a h3 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+.logo-container .logo {
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.navigation-menu-container {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 auto;
+    padding:0 ;
+    background: #28282B;
+    color: #fff;
+}
+.navigation-menu-container, .navigation-menu-container ul {
+    margin: 0; 
+    padding: 0;
+    padding-left: 5px;
+}
+.navigation-menu-container ul li {
+    display: inline;
+    float: right;  
+    margin: 0;
+}
+.navigation-menu-container ul li a {
+    display: block;
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navigation-menu-container ul li a:hover {
+    background: #404040;
+    color: yellow;
+    transition: all .4s
+}
+/*Home-Content*/
+app-home-content {
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 200px;
+    
+}
+app-home-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    background: #fff;
+    margin-left: 195px;
+    width: 70%;
+}
+app-home-content h3 {
+    font-size: 32px;
+    margin-top: 5px;
+    font-style: italic;
+    background: black;
+    color: #fff;
+    width: 50%;
+    margin-left: 350px;
+}
+/*Introductory Video*/
+app-home-content youtube-player {
+        margin-bottom: 100px;
+    }
+/*Anime List Content*/
+app-anime-list {
+    text-align: center;
+}
+app-anime-list h1 {
+    font-weight: bold;
+    font-size: 60px;
+    background: black;
+    color: #fff;
+    width: 50%;
+    margin-left: 330px;
+    margin-top: 20px;
+}
+/* Slideshow */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+        position: relative;
+        width: 800px;
+        margin-left: 250px;
+        margin-top: 20px;
+        margin-bottom: 180px;
+        text-align: center;
+      }
+/* Hide the images by default */
+.mySlides {
+        display: none;
+      }
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+        cursor: pointer;
+      }
+.prev {
+          left: 0%;
+      }
+/* Next & previous buttons */
+.prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+/* Position the "next button" to the right */
+.next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+/* Number text (1/3 etc) */
+.numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+/* Container for image text */
+.caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+.row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+/* Six columns side by side */
+.column {
+        float: left;
+        width: 16.66%;
+      }
+/* Add a transparency effect for thumnbail images */
+.demo {
+        opacity: 0.6;
+      }
+.active,
+      .demo:hover {
+        opacity: 1;
+      }
+/*Support*/
+app-support .support-wrapper {
+    text-align: center;
+    background: #fff;
+    line-height: 1.5;
+    width: 50%;
+    margin-left: 320px;
+    margin-top: 50px;
+}
+app-support .support-wrapper .title-container h1 {
+    font-size: 64px;
+    background: black;
+    color: #fff;
+}
+app-support .support-wrapper .form-container {
+    border: 5px solid black;
+}
+app-support .support-wrapper .form-container .label, app-support .support-wrapper .form-container .input {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+app-support .support-wrapper .form-container .input {
+    width: 80%;
+    border: 3px solid black;
+    padding: 5px 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+app-support .support-wrapper .form-container .textarea {
+    resize: none;
+    width: 80%;
+    height: 200px;
+    border: 3px solid black;
+    padding: 5px 5px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+app-support .support-wrapper .form-container .btnSubmit {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background: yellow;
+    border: 5px solid black;
+    width: 40%;
+    height: 100px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    transition: 0.3s;
+}
+app-support .support-wrapper .form-container .btnSubmit:hover {
+    background: black;
+    color: yellow;
+    border: 5px solid turquoise;
+}
+/*Manga-List*/
+.pepepls-dance {
+    display: inline-flex;
+    margin-top: 100px;
+}
+app-manga-list h1 {
+    text-align: center;
+    background: black;
+    color: #fff;
+    width: 50%;
+    font-size: 50px;
+    margin-left: 320px;
+    margin-top: 20px;
+}
+/*About-Us Content*/
+app-about-us {
+    text-align: center;
+
+}
+app-about-us .about-us-wrapper {
+    display: grid;
+    grid-template-areas:
+    "au-title au-title au-title"
+    "au-pic au-info au-info"
+    "au-pic au-info au-info"
+    "au-social-links au-social-links au-social-links";
+    background: black;
+    color: #fff;
+    width: 70%;
+    border: 5px solid #fff;
+    margin-left: 180px;
+    font-size: 32px;
+    margin-top: 80px;
+}
+app-about-us .about-us-title {
+    display: flex;
+    grid-area: au-title;
+    border: 5px solid #fff;
+}
+app-about-us .about-us-title h1 {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 250px;
+}
+app-about-us .about-us-title .pepega {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+}
+app-about-us .about-us-pic {
+    grid-area: au-pic;
+}
+app-about-us .about-us-pic .author-pic {
+    height: 250px;
+    width: 250px;
+    margin: 50px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+app-about-us .about-us-info {
+    grid-area: au-info;
+    border: 5px solid #fff;
+    padding: 3px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+app-about-us .about-us-info .pagman {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+}
+app-about-us .social-links {
+    grid-area: au-social-links;
+    border: 5px solid #fff;
+}
+app-about-us .social-links ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 20px 20px;
+}
+app-about-us .social-links ul li {
+    margin: 0px 30px;
+    padding: 20px 20px;
+    border: 5px solid turquoise;
+    border-radius: 50%;
+}
+app-about-us .social-links ul li .fa {
+    color: #fff;
+}
+/*Footer*/
+app-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 170px;
+    background:black;
+    color: #fff;
+    text-align: center;
+}
+app-footer h3 {
+    margin-top: 10px;
+}
+app-footer ul li{
+    display: inline-flex;
+    margin: 20px 8px;
+    border: 5px solid #fff;
+    padding: 10px 14px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+app-footer ul li a {
+    color: #fff;
+}
+app-footer .fa-facebook- {
+ width: 30px;
+ padding: 20px 0px;
+}
+    
+
+/*# sourceMappingURL=styles.css.map*/
