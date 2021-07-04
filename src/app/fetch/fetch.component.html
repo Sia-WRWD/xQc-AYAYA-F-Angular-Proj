@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Not Replied Fan Mails</h1>
+    <table class="table table--bg table--size">
+        <thead>
+            <tr>
+                <th>Ticket_ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let fd of fetchData">
+                <td><span>{{fd.Ticket_ID}}</span></td>
+                <td><span>{{fd.name}}</span></td>
+                <td><span>{{fd.email}}</span></td>
+                <td><span>{{fd.message}}</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
